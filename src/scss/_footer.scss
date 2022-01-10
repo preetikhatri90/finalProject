@@ -1,0 +1,113 @@
+footer{
+    box-sizing: border-box;
+    margin: 5px;  
+   
+    padding: 60px;
+    background-color:$footer;
+    img{
+        margin: -10px;
+       width: 200px;
+       height: 100px;
+
+   }
+   ul{
+       li{
+        color: $white;
+        text-decoration: underline;
+        text-decoration-color: white;
+
+        @media(max-width: $breakpoint-tablet){            
+            display: none;
+            
+    }
+     }
+       color: $white;
+       list-style: none;
+      
+       
+
+      
+     }  
+.mobilespace{
+    display: none;
+    @media(max-width: $breakpoint-mobile){ 
+        display: block;
+        margin-top: 20px;
+    }
+
+
+}
+
+   .tabletspace{
+       &-one{
+           display: none;
+           @media(max-width: $breakpoint-tablet){ 
+            display: block;                  
+           margin-top: 30px;
+    
+       }
+       }
+       &-two{
+        display: none;
+        @media(max-width: $breakpoint-tablet){ 
+            display: block;                  
+           margin-top: 60px;
+           
+    
+       }
+
+
+
+       }
+    display: none;
+    @media(max-width: $breakpoint-tablet){ 
+        display: block;                  
+       margin-top: 30px;
+
+   }
+   @media(max-width: $breakpoint-mobile){ 
+       display: none;
+   }
+}
+button{
+    margin-top: 48px;
+    @media(max-width: $breakpoint-tablet){ 
+                       
+       margin-left: -330px;
+
+   }
+   @media(max-width: $breakpoint-mobile){
+    margin-left:0px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+
+   }
+
+}
+.form-control{
+    background-color:$footer;
+    @media(max-width: $breakpoint-tablet){ 
+       width: 500px;
+       
+   }
+   @media(max-width: $breakpoint-mobile){
+    width: 330px;
+    margin-bottom: 0px;
+   }
+
+    
+}
+.form-control:focus {
+
+    box-shadow: none;
+    background-color:$white;
+  }
+ 
+h6{
+    color:$white;
+    text-transform: uppercase;
+    
+}
+  
+
+}
