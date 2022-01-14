@@ -2,10 +2,10 @@
     background-color: #F4FEF3;
     padding:50px;
     position: relative;
-    @media(max-width: $breakpoint-tablet){     
+    @media screen and (max-width:$breakpoint-tablet){     
         padding:20px;       
     }
-    @media(max-width: $breakpoint-mobile){ 
+    @media screen and (max-width:$breakpoint-mobile){ 
         padding:0px;
         margin-left: -35px;
      }
@@ -16,18 +16,17 @@
     img{       
         width: 700px;
         height:350px; 
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
             width: 400px;
         height:300px;
                   
 
     }
-    @media(max-width: $breakpoint-mobile){   
+    @media screen and (max-width:$breakpoint-mobile){   
       margin-left: -200px;
         width: 400px;
         height:300px;
         margin-left: -35px;
-
 
     }
 
@@ -40,7 +39,7 @@
         background-color:rgb(36, 20, 20);
         background-blend-mode: overlay;
         position: absolute;
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
         width: 450px;
         margin-left: 270px;
         margin-top: -105px;  
@@ -48,7 +47,7 @@
                   
 
     }
-    @media(max-width: $breakpoint-mobile){            
+    @media screen and (max-width:$breakpoint-mobile){            
         width: 400px;
         margin-left: 47px;
         margin-top: 0px; 
@@ -67,7 +66,7 @@
         height: 200px;
         padding: 30px;      
         background-color: #325288;
-        @media(max-width: $breakpoint-tablet){   
+        @media screen and (max-width:$breakpoint-tablet){   
             margin-top: -100px;         
             width: 450px;
             margin-left: 270px;
@@ -76,7 +75,7 @@
                       
     
         }
-        @media(max-width: $breakpoint-mobile){            
+        @media screen and (max-width:$breakpoint-mobile){            
             width: 400px;
         margin-left: 47px;
         margin-top: 5px; 
@@ -85,7 +84,6 @@
     }
     }
  
-
 
 
 }
@@ -98,7 +96,7 @@
     &-one{  
         .lineone{
             display: none;
-            @media(max-width: $breakpoint-mobile){    
+            @media screen and (max-width:$breakpoint-mobile){    
                 @include lines;
                 margin-top: -45px;       
                 margin-left: -58px;
@@ -110,7 +108,7 @@
         }
         
         }       
-    @media(max-width: $breakpoint-mobile){            
+    @media screen and (max-width:$breakpoint-mobile){            
         margin-top: 200px; 
         margin-left: 0px;
     margin-right: 0px;
@@ -123,7 +121,7 @@
     .box
 
     {
-        @media(max-width: $breakpoint-mobile){            
+        @media screen and (max-width:$breakpoint-mobile){            
             background-color: #EAEFED;
                   
     
@@ -131,7 +129,7 @@
        
         
         img{
-            @media(max-width: $breakpoint-mobile){   
+            @media screen and (max-width:$breakpoint-mobile){   
                
                   width: 400px;
                   height:300px;
@@ -140,14 +138,13 @@
           
               }
 
-
         }
     }
    
 
    .lineone{
        display: none;
-       @media(max-width: $breakpoint-mobile){            
+       @media screen and (max-width:$breakpoint-mobile){            
         display: block; 
               
 
@@ -157,27 +154,27 @@
     img{
         width: 900px;
         height: 400px;
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
         
             width: 700px;
             height: 300px;
                       
     
         }
-        @media(max-width: $breakpoint-mobile){            
+        @media screen and (max-width:$breakpoint-mobile){            
             // display: block; 
                   
     
     }
     }
-    @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
         
         margin-left: 70px;
     margin-right: 70px;
                   
 
     }
-    @media(max-width: $breakpoint-mobile){            
+    @media screen and (max-width:$breakpoint-mobile){            
         // display: block; 
               
 
@@ -188,7 +185,7 @@
     background-color: #F4EEE8;
     padding:100px;
     .tablet{
-        @media(max-width: $breakpoint-mobile){            
+        @media screen and (max-width:$breakpoint-mobile){            
             display: none; 
                   
     
@@ -196,19 +193,19 @@
 
     }
     .dis{
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
             display: none; 
                   
 
     }
-    @media(max-width: $breakpoint-mobile){            
+    @media screen and (max-width:$breakpoint-mobile){            
         display: block; 
               
 
 }
     }
     .firstpara{
-        @media(max-width: $breakpoint-mobile){            
+        @media screen and (max-width:$breakpoint-mobile){            
            margin-top: -50px;
          
                   
@@ -234,3 +231,4 @@
         }
 
 }
+

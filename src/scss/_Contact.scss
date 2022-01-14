@@ -6,14 +6,14 @@
         margin-left: 400px;
         width: 700px;
         height:300px;   
-        @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
             margin-left: 200px;
             width: 470px;
         height:250px;
                   
     
     } 
-    @media(max-width: $breakpoint-mobile){    
+@media screen and (max-width:$breakpoint-mobile){    
 
          margin-left:0px;
         width: 430px;
@@ -21,7 +21,6 @@
               
 
 }
-
 
 
 }
@@ -33,11 +32,11 @@
         margin-left: 20px;
         background-color:black;
         background-blend-mode: overlay;
-        @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
             width: 450px;
     
     }
-     @media(max-width: $breakpoint-mobile){
+ @media screen and (max-width:$breakpoint-mobile){
          margin-top:0px;            
          margin-left:0px;
         width: 405px;
@@ -57,12 +56,12 @@
         height: 200px;
         padding: 20px;      
         background-color: $footer;
-        @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
             width: 450px;
     
     }
 
-    @media(max-width: $breakpoint-mobile){  
+@media screen and (max-width:$breakpoint-mobile){  
         margin-top: 5px;          
         margin-left:0px;
        width: 405px;
@@ -87,13 +86,13 @@
     #first{
         width: 430px;
         height: 35px;
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             width: 330px;
 
         }
     }
     .Firstname{
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             width: 430px;
 
         }
@@ -101,12 +100,12 @@
     }
     .lastname{
         margin-top:65px ;
-        @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
             margin-left: -80px;
             margin-right: -50px;
     
     }
-    @media(max-width: $breakpoint-mobile){
+@media screen and (max-width:$breakpoint-mobile){
         margin-top: -20px;
         margin-left: 0px;
         margin-right: 0px;
@@ -115,3 +114,4 @@
     }
     }
 }
+

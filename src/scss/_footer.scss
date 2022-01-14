@@ -16,7 +16,7 @@ footer{
         text-decoration: underline;
         text-decoration-color: white;
 
-        @media(max-width: $breakpoint-tablet){            
+    @media screen and (max-width:$breakpoint-tablet){            
             display: none;
             
     }
@@ -30,18 +30,17 @@ footer{
      }  
 .mobilespace{
     display: none;
-    @media(max-width: $breakpoint-mobile){ 
+@media screen and (max-width:$breakpoint-mobile){ 
         display: block;
         margin-top: 20px;
     }
-
 
 }
 
    .tabletspace{
        &-one{
            display: none;
-           @media(max-width: $breakpoint-tablet){ 
+       @media screen and (max-width:$breakpoint-tablet){ 
             display: block;                  
            margin-top: 30px;
     
@@ -49,34 +48,32 @@ footer{
        }
        &-two{
         display: none;
-        @media(max-width: $breakpoint-tablet){ 
+    @media screen and (max-width:$breakpoint-tablet){ 
             display: block;                  
            margin-top: 60px;
            
     
        }
 
-
-
        }
     display: none;
-    @media(max-width: $breakpoint-tablet){ 
+@media screen and (max-width:$breakpoint-tablet){ 
         display: block;                  
        margin-top: 30px;
 
    }
-   @media(max-width: $breakpoint-mobile){ 
+   @media screen and (max-width:$breakpoint-mobile){ 
        display: none;
    }
 }
 button{
     margin-top: 48px;
-    @media(max-width: $breakpoint-tablet){ 
+@media screen and (max-width:$breakpoint-tablet){ 
                        
        margin-left: -330px;
 
    }
-   @media(max-width: $breakpoint-mobile){
+   @media screen and (max-width:$breakpoint-mobile){
     margin-left:0px;
     margin-top: -50px;
     margin-bottom: -50px;
@@ -86,11 +83,11 @@ button{
 }
 .form-control{
     background-color:$footer;
-    @media(max-width: $breakpoint-tablet){ 
+@media screen and (max-width:$breakpoint-tablet){ 
        width: 500px;
        
    }
-   @media(max-width: $breakpoint-mobile){
+   @media screen and (max-width:$breakpoint-mobile){
     width: 330px;
     margin-bottom: 0px;
    }
@@ -111,3 +108,6 @@ h6{
   
 
 }
+
+
+

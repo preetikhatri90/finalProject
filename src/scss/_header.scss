@@ -6,7 +6,7 @@ header{
          margin: -10px;
         width: 200px;
         height: 100px;
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
                 margin-left: -270px;     
         }
     }
@@ -21,13 +21,15 @@ header{
     }
     .info{
         display: none;
-        @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
             display: block; 
             margin-top:10px;          
 
     }
-    @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
         display: none;
     }
     }
 }
+
+

@@ -26,7 +26,7 @@
             margin-left: 100px;          
             height: 300px;
                          
-            @media(max-width: $breakpoint-tablet){            
+        @media screen and (max-width:$breakpoint-tablet){            
                 margin-left: 10px; 
                 height: 200px;
                 
@@ -34,12 +34,11 @@
         } 
 
 
-
         
     }
     .secound{
        
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             display: none;
             
 
@@ -53,18 +52,18 @@
         @include boxes;
         height: 350px;
         margin-left:105px;
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
             margin-left:5px;
             height: 210px;
             padding:10px;  
 
     }
-    @media(max-width: $breakpoint-mobile){
+@media screen and (max-width:$breakpoint-mobile){
         height: 270px;
 
     }
        .Displaynone{
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
            display: none;
 
     }
@@ -72,13 +71,13 @@
        }
            .line{
             @include lines;
-            @media(max-width: $breakpoint-tablet){
+        @media screen and (max-width:$breakpoint-tablet){
                margin-top:-15px;
                width:695px ;
                margin-left:-10px;
     
         }
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             width:355px ;
 
         }
@@ -91,7 +90,7 @@
            }
            button{
                @include buttons;
-               @media(max-width: $breakpoint-mobile){
+           @media screen and (max-width:$breakpoint-mobile){
                 display: none;
     
             }
@@ -99,7 +98,7 @@
 
        }
        .ThirdImage{
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
            display: none;
 
     }
@@ -120,23 +119,22 @@
                 height: 300px;
                 width: 400px;
                 background-color: #EAEFED;
-                @media(max-width: $breakpoint-tablet){
+            @media screen and (max-width:$breakpoint-tablet){
                     margin-left: 300px;
                     margin-top: -200px;
                     height: 290px;
                       width: 330px;
                     
                 }
-                @media(max-width: $breakpoint-mobile){
+            @media screen and (max-width:$breakpoint-mobile){
                     margin-left: -80px;
                     margin-top: 30px;
                     height: 220px;
                     
 
-
                 }
                 img{
-                    @media(max-width: $breakpoint-tablet){
+                @media screen and (max-width:$breakpoint-tablet){
                         margin-left: 5px;
                         margin-top: -200px;
                         height: 120px;
@@ -144,7 +142,7 @@
                         
                     }
                     
-                    @media(max-width: $breakpoint-mobile){
+                @media screen and (max-width:$breakpoint-mobile){
                         margin-top: 0px;
                         width: 90px;
                         height: 150px;
@@ -154,10 +152,10 @@
                 }
             }
             .aboutus{
-                @media(max-width: $breakpoint-tablet){
+            @media screen and (max-width:$breakpoint-tablet){
                     margin-left: -150px;
                 }
-                @media(max-width: $breakpoint-mobile){
+            @media screen and (max-width:$breakpoint-mobile){
                     margin-top: -50px;
                 }
 
@@ -172,18 +170,18 @@
         padding:50px;       
         background-color: #F4FEF3;
         
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top: -80px;
         }
         .container{
             img{
                 margin-left: 30px;
-                @media(max-width: $breakpoint-tablet){
+            @media screen and (max-width:$breakpoint-tablet){
                     margin-left: -50px;
                     width: 300px;
                     height: 400px;
                 }
-                @media(max-width: $breakpoint-mobile){
+            @media screen and (max-width:$breakpoint-mobile){
                     margin-left:20px;
                     height: 250px;
                     width: 400px;
@@ -194,17 +192,17 @@
             &__one{
                 margin-top: 5px;
             margin-left:0px;
-            @media(max-width: $breakpoint-tablet){
+        @media screen and (max-width:$breakpoint-tablet){
                 margin-left:-70px;
             }
-            @media(max-width: $breakpoint-mobile){
+        @media screen and (max-width:$breakpoint-mobile){
                 margin-left:-10px;
                 margin-top: 20px;
 
             }
             
             .Displaynone{
-                @media(max-width: $breakpoint-tablet){
+            @media screen and (max-width:$breakpoint-tablet){
                     display: none;
                 }
 
@@ -221,7 +219,7 @@
     @include boxes;
     background-color: #F4EEE8;
     .heading{
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top:-30px;
         }
 
@@ -233,11 +231,11 @@
         margin-top: 20px;
         margin-bottom: 0px;
         width: 770px;
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
             width: 600px;
             margin-left: 0px;
         }
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top:-30px;
             width: 250px;
 
@@ -245,7 +243,7 @@
         
     }
     .carousel-indicators{
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             display: none;
           
         }
@@ -254,17 +252,17 @@
     }
 
     .topmargin{
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top: 50px;
         }  }
     img{
         margin-left: 220px;
         width: 400px;
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
             margin-left: -50px;
             width: 300px;
         }
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             // margin-top: -50px;
             width: 300px;
         }
@@ -272,7 +270,7 @@
     }
     .top{
         margin-top: 350px;
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top: 520px;
        }
     }
@@ -280,10 +278,10 @@
     
         margin-top:10px; 
         margin-left:10px;
-        @media(max-width: $breakpoint-tablet){
+    @media screen and (max-width:$breakpoint-tablet){
             margin-left: -50px;
        }
-       @media(max-width: $breakpoint-mobile){
+   @media screen and (max-width:$breakpoint-mobile){
         margin-left: 0px;
    }
     
@@ -294,13 +292,12 @@
                 width: 300px;
                 text-align:justify;
                 letter-spacing: 2px; 
-                @media(max-width: $breakpoint-tablet){
+            @media screen and (max-width:$breakpoint-tablet){
                     margin-left: -50px;
                }
-               @media(max-width: $breakpoint-mobile){
+           @media screen and (max-width:$breakpoint-mobile){
                 margin-left: 0px;
               
-
 
                }
                     button{
@@ -318,20 +315,19 @@
 
     }
 
-
 .fifthSection{
     @include boxes;
     background-color:$white;
     margin-left: 10px;
     .picture{
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             display: none;
        }
 
     }
     .pictureone{
         display: none;
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top: -50px;;
             margin-left: 10px;
             display: block;
@@ -340,29 +336,29 @@
 
     }
     
-    @media(max-width: $breakpoint-tablet){
+@media screen and (max-width:$breakpoint-tablet){
         margin-left: -50px;
    }.blogs{
-    @media(max-width: $breakpoint-tablet){
+@media screen and (max-width:$breakpoint-tablet){
       display: none;
    }}
    .whoweare{
     display: none;
-    @media(max-width: $breakpoint-tablet){
+@media screen and (max-width:$breakpoint-tablet){
 
         margin-left: 10px;
         display: block
         ;
         
      }
-     @media(max-width: $breakpoint-mobile){
+ @media screen and (max-width:$breakpoint-mobile){
          display: none;
      }
 
    }
    .whoweareone{
        display: none;
-       @media(max-width: $breakpoint-mobile){
+   @media screen and (max-width:$breakpoint-mobile){
         display: block;
     }
    }
@@ -377,7 +373,6 @@
 
 
 
-
 .sixthSection{
     @include boxes;
     padding:30px;
@@ -387,16 +382,15 @@
     .container{
         img{
             margin-left: 30px;
-            @media(max-width: $breakpoint-tablet){
+        @media screen and (max-width:$breakpoint-tablet){
                 width: 500px;
                 height: 350px;
                 margin-left: -20px;
              }
-             @media(max-width: $breakpoint-mobile){
+         @media screen and (max-width:$breakpoint-mobile){
                 width: 350px;
                 height: 250px;
               
-
 
                }
         }
@@ -404,11 +398,10 @@
         margin-left:15px;
         margin-top: -50px;
         margin-right: -15px;
-        @media(max-width: $breakpoint-mobile){
+    @media screen and (max-width:$breakpoint-mobile){
             margin-top: 5px;
             margin-left: 0px;
           
-
 
            }
         
@@ -444,3 +437,5 @@
         background-color: $footer;
     }
 }
+
+
