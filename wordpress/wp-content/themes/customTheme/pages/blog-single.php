@@ -1,0 +1,107 @@
+<?php get_header(); ?>
+
+<div class="firstSec">
+    <section class="imgSection">
+           <img src="img/blog/image 1.png" class="img-fluid ms-5" alt="">   
+        <div class="line"></div>
+        <div class="text">
+     
+           <h2>Interesting Facts I Bet You Never <br> Knew About BLOGS</h2>
+              
+        </section>
+      </div>
+     
+
+        <section class="textblock mt-5">
+            <div class="textblock-one">
+              <div class="lineone"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit gravida eleifend. Mauris fringilla urna at lectus dapibus laoreet. Proin id sem consequat arcu ultrices porta ac a leo. Quisque quis blandit magna, ut bibendum nibh. Donec pulvinar risus nulla, vel fermentum quam tempus ac. Vivamus nunc massa, egestas at auctor nec, vehicula sed ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </div>
+            <div class="textblock-two mt-3">Aenean placerat pulvinar quam, et convallis arcu feugiat et. Duis aliquet iaculis dapibus. Aenean blandit massa vel lacus luctus cursus. Sed aliquam ipsum non nibh commodo, non efficitur magna tempus. Curabitur eget mi magna. Maecenas mollis lectus nulla, nec laoreet justo efficitur et. Maecenas ac justo eget sapien hendrerit sollicitudin in et ipsum.</div>
+        
+        <div class="textblock-three mt-3">
+            <ul>
+                <li>Aenean placerat pulvinar quam, et convallis arcu feugiat et. </li>
+                <li>   Duis aliquet iaculis dapibus.</li>
+                <li>
+                    Aenean blandit massa vel lacus luctus cursus. </li>
+                <li>
+                    Sed aliquam ipsum non nibh commodo, non efficitur magna tempus. </li>
+                <li>
+                    Curabitur eget mi magna. Maecenas mollis lectus nulla, nec laoreet justo efficitur et. Maecenas ac justo eget sapien hendrerit sollicitudin in et ipsum.</li>
+            </ul>
+        </div>
+        <div class=" box mt-3 mb-5">
+            <img src="img/blog/blog-1.png" class="img-fluid" alt="">
+            <caption class="mt-5">Vestibulum ornare dapibus elit vitae commodo. Donec nec tellus velit. Duis sem leo, tempus quis arcu ac, suscipit consectetur odio. Maecenas mattis lacinia arcu, sed tempor ligula blandit a.</caption>
+        </div>
+
+
+
+        <div>
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+        </div>
+        <p class="mt-5">
+            Aenean placerat pulvinar quam, et convallis arcu feugiat et. Duis aliquet iaculis dapibus. Aenean blandit massa vel lacus luctus cursus. Sed aliquam ipsum non nibh commodo, non efficitur magna tempus. Curabitur eget mi magna. Maecenas mollis lectus nulla, nec laoreet justo efficitur et. Maecenas ac justo eget sapien hendrerit sollicitudin in et ipsum. 
+        </p>
+    </section>
+
+<section class="latestpost">
+   <p class="firstpara mb-5">  Related Blogs</p>
+   <div class="row justify-content-around">        
+    <div class="col-lg-4 col-md-6 col-sm-12">  
+      <div class="tablet mt-5"></div>
+        <div class="border bg-white shadoweffect">
+          <div class="hover-overlay">
+          <div class="d-inline shadoweffect col-md-3">
+            <div class="col-md-offset-2">
+            <a href="blog_single.html" class="text-decoration-none text-dark"  >                   
+            <img src="img/blog/image 1.png " class="img-fluid cardimage"alt="">
+            <div class="text mt-3 ps-2">  <h6 class=""> June 11, 2021</h6>           
+            <p class="ps-1"> Interesting Facts I Bet You <br> Never Knew About BLOGS <br> <br></p>
+           </div>  
+           </a>   
+           </div>              
+              </div>
+            </div>
+     </div>
+</div>
+  
+<div class=" col-lg-4 col-md-6 col-sm-12">  
+  <div class="tablet-one mt-5"></div>
+  <div class="border bg-white shadoweffect">
+    <div class="hover-overlay">
+    <div class="d-inline shadoweffect col-md-3">
+      <div class="col-md-offset-2">
+        <a href="blog_single.html" class="text-decoration-none text-dark"  > 
+      <img src="img/blog/image 1-1.png " class="img-fluid cardimage"alt="">
+      <div class="text mt-3 ps-2">  <h6 class=""> June 11, 2021</h6>           
+      <p class="ps-1"> Everything You Wanted to Know <br> About BLOGS and Were Too <br> EEmbarrassed to Ask</p>
+     </div> 
+     </a>    
+     </div>              
+        </div>
+      </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 dis">  
+<div class="tablet-two mt-5"></div>
+<div class="border bg-white shadoweffect">
+<div class="hover-overlay">
+<div class="d-inline shadoweffect col-md-3">
+  <div class="col-md-offset-2">
+    <a href="blog_single.html" class="text-decoration-none text-dark"  > 
+  <img src="img/blog/image 1-2.png " class="img-fluid cardimage"alt="">
+  <div class="text mt-3 ps-2">  <h6 class=""> June 11, 2021</h6>           
+  <p class="ps-1">What Can You Do To Save <br> Your BLOGS From Destruction  <br> By Social Media? </p>
+ </div>  
+ </a>   
+ </div>              
+    </div>
+  </div>
+</div>
+</div>
+
+
+</section>
+<?php get_footer(); ?>

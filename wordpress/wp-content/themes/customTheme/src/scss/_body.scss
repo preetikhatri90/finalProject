@@ -1,0 +1,441 @@
+
+@mixin boxes {
+    // 
+    margin-top: 0px;
+    padding:50px;  
+    background-color: $white;
+    
+}
+@mixin buttons{
+    border: black solid 1px;
+    
+}
+@mixin lines{
+    margin: -50px;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 6px solid rgba(128, 95, 95, 0.1);
+    background-color:#325288;;
+}
+
+   
+.firstSection{
+    background-color: #F4EEE8;
+   .imageClass{  
+        img{ 
+            margin-left: 100px;          
+            height: 300px;
+                         
+        @media screen and (max-width:$breakpoint-tablet){            
+                margin-left: 10px; 
+                height: 200px;
+                
+        
+        } 
+
+
+        
+    }
+    .secound{
+       
+    @media screen and (max-width:$breakpoint-mobile){
+            display: none;
+            
+
+    }
+       
+         }
+
+   }
+   .secoundPara{
+       .container{
+        @include boxes;
+        height: 350px;
+        margin-left:105px;
+    @media screen and (max-width:$breakpoint-tablet){
+            margin-left:5px;
+            height: 210px;
+            padding:10px;  
+
+    }
+@media screen and (max-width:$breakpoint-mobile){
+        height: 270px;
+
+    }
+       .Displaynone{
+    @media screen and (max-width:$breakpoint-tablet){
+           display: none;
+
+    }
+
+       }
+           .line{
+            @include lines;
+        @media screen and (max-width:$breakpoint-tablet){
+               margin-top:-15px;
+               width:695px ;
+               margin-left:-10px;
+    
+        }
+    @media screen and (max-width:$breakpoint-mobile){
+            width:355px ;
+
+        }
+            
+           }
+          
+           img{
+            margin:105px;
+          
+           }
+           button{
+               @include buttons;
+           @media screen and (max-width:$breakpoint-mobile){
+                display: none;
+    
+            }
+           }
+
+       }
+       .ThirdImage{
+    @media screen and (max-width:$breakpoint-tablet){
+           display: none;
+
+    }
+}
+
+       }
+       
+
+    }
+ .secoundSection{
+        @include boxes;
+        padding:100px;
+        button{
+            background-color: $footer;
+        }
+        .container{
+            &-one{
+                height: 300px;
+                width: 400px;
+                background-color: #EAEFED;
+            @media screen and (max-width:$breakpoint-tablet){
+                    margin-left: 300px;
+                    margin-top: -200px;
+                    height: 290px;
+                      width: 330px;
+                    
+                }
+            @media screen and (max-width:$breakpoint-mobile){
+                    margin-left: -80px;
+                    margin-top: 30px;
+                    height: 220px;
+                    
+
+                }
+                img{
+                @media screen and (max-width:$breakpoint-tablet){
+                        margin-left: 5px;
+                        margin-top: -200px;
+                        height: 120px;
+                          width: 80px;
+                        
+                    }
+                    
+                @media screen and (max-width:$breakpoint-mobile){
+                        margin-top: 0px;
+                        width: 90px;
+                        height: 150px;
+
+                    }
+
+                }
+            }
+            .aboutus{
+            @media screen and (max-width:$breakpoint-tablet){
+                    margin-left: -150px;
+                }
+            @media screen and (max-width:$breakpoint-mobile){
+                    margin-top: -50px;
+                }
+
+            }
+        }
+        
+    }
+
+ .thirdSection{
+        
+        @include boxes;
+        padding:50px;       
+        background-color: #F4FEF3;
+        
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top: -80px;
+        }
+        .container{
+            img{
+                margin-left: 30px;
+            @media screen and (max-width:$breakpoint-tablet){
+                    margin-left: -50px;
+                    width: 300px;
+                    height: 400px;
+                }
+            @media screen and (max-width:$breakpoint-mobile){
+                    margin-left:20px;
+                    height: 250px;
+                    width: 400px;
+                    
+                }
+
+            }
+            &__one{
+                margin-top: 5px;
+            margin-left:0px;
+        @media screen and (max-width:$breakpoint-tablet){
+                margin-left:-70px;
+            }
+        @media screen and (max-width:$breakpoint-mobile){
+                margin-left:-10px;
+                margin-top: 20px;
+
+            }
+            
+            .Displaynone{
+            @media screen and (max-width:$breakpoint-tablet){
+                    display: none;
+                }
+
+            }
+            button{
+                @include buttons;
+            }
+        }
+       
+    }
+        
+    }
+.fourthSection{
+    @include boxes;
+    background-color: #F4EEE8;
+    .heading{
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top:-30px;
+        }
+
+    }
+    
+    .line{
+        @include lines;
+        margin-left: 220px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 770px;
+    @media screen and (max-width:$breakpoint-tablet){
+            width: 600px;
+            margin-left: 0px;
+        }
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top:-30px;
+            width: 250px;
+
+        }
+        
+    }
+    .carousel-indicators{
+    @media screen and (max-width:$breakpoint-mobile){
+            display: none;
+          
+        }
+       
+
+    }
+
+    .topmargin{
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top: 50px;
+        }  }
+    img{
+        margin-left: 220px;
+        width: 400px;
+    @media screen and (max-width:$breakpoint-tablet){
+            margin-left: -50px;
+            width: 300px;
+        }
+    @media screen and (max-width:$breakpoint-mobile){
+            // margin-top: -50px;
+            width: 300px;
+        }
+        
+    }
+    .top{
+        margin-top: 350px;
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top: 520px;
+       }
+    }
+       .text{
+    
+        margin-top:10px; 
+        margin-left:10px;
+    @media screen and (max-width:$breakpoint-tablet){
+            margin-left: -50px;
+       }
+   @media screen and (max-width:$breakpoint-mobile){
+        margin-left: 0px;
+   }
+    
+         
+            &__space{
+                margin: 20px; 
+                margin-left:10px;             
+                width: 300px;
+                text-align:justify;
+                letter-spacing: 2px; 
+            @media screen and (max-width:$breakpoint-tablet){
+                    margin-left: -50px;
+               }
+           @media screen and (max-width:$breakpoint-mobile){
+                margin-left: 0px;
+              
+
+               }
+                    button{
+                        @include buttons;
+                    }
+                
+            }
+        }
+        
+    
+   
+        .carousel-item{
+            height: 32rem;
+        }
+
+    }
+
+.fifthSection{
+    @include boxes;
+    background-color:$white;
+    margin-left: 10px;
+    .picture{
+    @media screen and (max-width:$breakpoint-mobile){
+            display: none;
+       }
+
+    }
+    .pictureone{
+        display: none;
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top: -50px;;
+            margin-left: 10px;
+            display: block;
+            
+       }
+
+    }
+    
+@media screen and (max-width:$breakpoint-tablet){
+        margin-left: -50px;
+   }.blogs{
+@media screen and (max-width:$breakpoint-tablet){
+      display: none;
+   }}
+   .whoweare{
+    display: none;
+@media screen and (max-width:$breakpoint-tablet){
+
+        margin-left: 10px;
+        display: block
+        ;
+        
+     }
+ @media screen and (max-width:$breakpoint-mobile){
+         display: none;
+     }
+
+   }
+   .whoweareone{
+       display: none;
+   @media screen and (max-width:$breakpoint-mobile){
+        display: block;
+    }
+   }
+
+   
+    button{
+        background-color: $footer;
+    }
+
+}
+
+
+
+
+.sixthSection{
+    @include boxes;
+    padding:30px;
+   
+    background-color: #F4FEF3;
+    // margin-top: 100px;
+    .container{
+        img{
+            margin-left: 30px;
+        @media screen and (max-width:$breakpoint-tablet){
+                width: 500px;
+                height: 350px;
+                margin-left: -20px;
+             }
+         @media screen and (max-width:$breakpoint-mobile){
+                width: 350px;
+                height: 250px;
+              
+
+               }
+        }
+        &__one{
+        margin-left:15px;
+        margin-top: -50px;
+        margin-right: -15px;
+    @media screen and (max-width:$breakpoint-mobile){
+            margin-top: 5px;
+            margin-left: 0px;
+          
+
+           }
+        
+        button{
+            @include buttons;
+        }
+    }
+    
+}
+
+}
+.seventhSection{
+    @include boxes;
+    padding:50px;
+    background-color: $white;
+    text-align: center;
+    .backgroundColour{
+        border-radius: 50%;
+        background-color: $footer;
+        padding-left: 20px;
+    }
+    span{
+        color: $footer;
+
+    }
+}
+
+.eightSection{
+    @include boxes;
+    padding:50px;
+    background-color:  #F4EEE8;
+    button{
+        background-color: $footer;
+    }
+}
+
+

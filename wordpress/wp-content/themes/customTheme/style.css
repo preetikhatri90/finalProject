@@ -1,0 +1,181 @@
+ .category .nav a{
+  text-decoration: none;
+  color: black;
+  margin: 30px 30px;
+  font-weight: bold;
+  
+
+ }
+ 
+ header .nav a{
+  text-decoration: none;
+  color: black;
+  margin: 10px 10px;
+  font-weight: bold;
+} 
+
+
+
+.pagination-wrap {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.pagination-wrap .pagination {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.pagination-wrap .pagination > li:first-child > a, 
+.pagination-wrap .pagination > li:first-child > span {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.pagination-wrap .pagination > li:last-child > a, 
+.pagination-wrap .pagination > li:last-child > span {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.pagination-wrap .pagination > li > a,
+.pagination-wrap .pagination > li > span {
+  background-color:white;
+ 
+  padding: 10px 15px;
+  font-weight: bold;
+  color:black;
+}
+.pagination-wrap .pagination > li > a:hover, 
+.pagination-wrap .pagination > li > span:hover, 
+.pagination-wrap .pagination > li > a:focus, 
+.pagination-wrap .pagination > li > span:focus {
+  background-color: black;
+  color: white;
+  border-color: #189690;
+}
+.pagination-wrap .pagination .current {
+  background-color:white;
+  border-color: #189690;
+}
+.pagination-wrap .pagination .current:hover,
+.pagination-wrap .pagination .current span:hover {
+  background-color: #189690;
+  border-color: #148781;
+
+
+}
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?bff6dm');
+  src:  url('fonts/icomoon.eot?bff6dm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bff6dm') format('truetype'),
+    url('fonts/icomoon.woff?bff6dm') format('woff'),
+    url('fonts/icomoon.svg?bff6dm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Ellipse-68:before {
+  content: "\e913";
+}
+.icon-45:before {
+  content: "\e900";
+}
+.icon-Checkmark:before {
+  content: "\e901";
+}
+.icon-Close:before {
+  content: "\e902";
+}
+.icon-Down:before {
+  content: "\e903";
+}
+.icon-down-toogle-arrow:before {
+  content: "\e904";
+}
+.icon-Facebook:before {
+  content: "\e905";
+}
+.icon-Github:before {
+  content: "\e906";
+}
+.icon-Left:before {
+  content: "\e907";
+}
+.icon-LinkedIn:before {
+  content: "\e908";
+}
+.icon-Location:before {
+  content: "\e909";
+}
+.icon-Menu:before {
+  content: "\e90a";
+}
+.icon-Refresh:before {
+  content: "\e90b";
+}
+.icon-Right:before {
+  content: "\e90c";
+}
+.icon-right-toogle-arrow:before {
+  content: "\e90d";
+}
+.icon-Twitter:before {
+  content: "\e90e";
+}
+.icon-Up:before {
+  content: "\e90f";
+}
+.icon-up-toogle-arrow:before {
+  content: "\e910";
+}
+.icon-checkmark:before {
+  content: "\e911";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-spinner11:before {
+  content: "\e984";
+}
+.icon-arrow-up2:before {
+  content: "\ea3a";
+}
+.icon-arrow-up-right2:before {
+  content: "\ea3b";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-down2:before {
+  content: "\ea3e";
+}
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}

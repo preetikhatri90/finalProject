@@ -1,0 +1,35 @@
+header{
+    box-sizing: border-box;  
+    padding: 10px;
+    
+    img{
+         margin: -10px;
+        width: 200px;
+        height: 100px;
+        @media screen and (max-width:$breakpoint-tablet){            
+                margin-left: -270px;     
+        }
+    }
+    ul{
+    
+        li{           
+            color:black;
+            list-style: none;
+            display: inline-block;
+        }
+      
+    }
+    .info{
+        display: none;
+        @media screen and (max-width:$breakpoint-tablet){            
+            display: block; 
+            margin-top:10px;          
+
+    }
+    @media screen and (max-width:$breakpoint-mobile){
+        display: none;
+    }
+    }
+}
+
+
