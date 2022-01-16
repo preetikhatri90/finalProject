@@ -7,7 +7,8 @@
 
 
   <section class="rightimageSection">
-      <img src="img/blog/blog-1.png" class="img-fluid" alt="">   
+  <img src="<?php echo get_template_directory_uri();?>/assest/img/blog/blog-1.png" class="img-fluid" alt="">   
+                   
       <div class="line position-absolute "></div>
       <div class="text position-absolute">
       
@@ -43,6 +44,9 @@
             get_template_part('template-parts/content', 'archive');
         }
 
+
+        ?> </div> 
+        <?php 
     }
     ?>
 <?php get_footer(); ?> -->
