@@ -94,28 +94,6 @@ header .info {
   }
 }
 
-.firstSection .secoundPara .container .line {
-  margin: -50px;
-  margin-bottom: 2rem;
-  border: 0;
-  border-top: 6px solid rgba(128, 95, 95, 0.1);
-  background-color: #325288;
-}
-
-@media screen and (max-width: 768px) {
-  .firstSection .secoundPara .container .line {
-    margin-top: -15px;
-    width: 695px;
-    margin-left: -10px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .firstSection .secoundPara .container .line {
-    width: 355px;
-  }
-}
-
 .firstSection .secoundPara .container img {
   margin: 105px;
 }
@@ -271,32 +249,6 @@ header .info {
 @media screen and (max-width: 425px) {
   .fourthSection .heading {
     margin-top: -30px;
-  }
-}
-
-.fourthSection .line {
-  margin: -50px;
-  margin-bottom: 2rem;
-  border: 0;
-  border-top: 6px solid rgba(128, 95, 95, 0.1);
-  background-color: #325288;
-  margin-left: 220px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  width: 770px;
-}
-
-@media screen and (max-width: 768px) {
-  .fourthSection .line {
-    width: 600px;
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .fourthSection .line {
-    margin-top: -30px;
-    width: 250px;
   }
 }
 

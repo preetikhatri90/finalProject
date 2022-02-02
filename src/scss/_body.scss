@@ -69,20 +69,7 @@
     }
 
        }
-           .line{
-            @include lines;
-        @media screen and (max-width:$breakpoint-tablet){
-               margin-top:-15px;
-               width:695px ;
-               margin-left:-10px;
-    
-        }
-    @media screen and (max-width:$breakpoint-mobile){
-            width:355px ;
-
-        }
-            
-           }
+           
           
            img{
             margin:105px;
@@ -225,23 +212,7 @@
 
     }
     
-    .line{
-        @include lines;
-        margin-left: 220px;
-        margin-top: 20px;
-        margin-bottom: 0px;
-        width: 770px;
-    @media screen and (max-width:$breakpoint-tablet){
-            width: 600px;
-            margin-left: 0px;
-        }
-    @media screen and (max-width:$breakpoint-mobile){
-            margin-top:-30px;
-            width: 250px;
-
-        }
-        
-    }
+    
     .carousel-indicators{
     @media screen and (max-width:$breakpoint-mobile){
             display: none;
