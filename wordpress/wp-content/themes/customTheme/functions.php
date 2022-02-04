@@ -65,75 +65,6 @@ function customTheme_Menus(){
 add_action('init', 'customTheme_Menus');
 
 
-
-
-
-
-
-
-
-
-function post_type_init(){
-    $labels = array(
-        'name' => _x('types', 'taxonomy general name'),
-        'singular_name' => _x('type', 'taxonomy singular name'),
-        'add_new' => __('Add type'),
-        'add_new_item' => __('Add New type'),
-        'edit_item' => __('Edit type'),
-        'new_item' => __('New type'),
-        'all_items' => __('All type'),
-        'view_item' => __('View type'),
-        'search_items' => __('Search type'),
-        'not_found' => __('No type found'),
-        'not_found_in_trash' => __('No type on trash'),
-        'parent_item_colon' => '',
-        'menu_name' => __('News')
-    );
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'query_var' => true,
-        'rewrite' => array('slug' => 'types'),
-        'capability_type' => 'page',
-        'has_archive' => true,
-        'hierarchical' => true,
-        'menu_position' => null,
-        'menu_icon' => 'dashicons-welcome-write-blog',
-        'rewrite' => array( 'slug' => 'news' ),
-        'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' )
-    );
-    $labels = array(
-        'name' => __('types'),
-        'singular_name' => __('type'),
-        'search_items' => __('Search'),
-        'popular_items' => __('More Used'),
-        'all_items' => __('All type'),
-        'parent_item' => null,
-        'parent_item_colon' => null,
-        'edit_item' => __('Add new'),
-        'update_item' => __('Update'),
-        'add_new_item' => __('Add new type'),
-        'new_item_name' => __('New')
-    );
-    register_taxonomy('types', array('news'), array(
-		'hierarchical' => true,
-		'labels' => $labels,
-		'singular_label' => 'type_category',
-		'all_items' => 'types',
-		'query_var' => true,
-        'show_admin_column' => true,
-		'rewrite' => array('slug' => 'types'))
-    );
-    register_post_type('news', $args);
-    // flush_rewrite_rules();
-}
-add_action('init', 'post_type_init');
- 
-
-
 //change the order of posts/pages/cpt in the Divi Blog module
 
 add_action('pre_get_posts', 'pa_change_blog_module_order');
@@ -147,6 +78,175 @@ $query->set('orderby', 'title');
 $query->set('order', 'ASC');
 }
 }
+/**
+ * Add copyright customizer
+ */
+
+require get_template_directory() . '/classes/footer-copyright-customizer.php';
+
+require get_template_directory() . '/classes/customTheme-contact.php';
+
+require get_template_directory() . '/classes/customTheme-footer.php';
+
+
+
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'head',
+            'title'             => __('Head'),
+            'description'       => __('A custom head block.'),
+            'render_template'   => 'template-parts/blocks/hero.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'head', 'leadspace' ),
+            'mode'              =>'auto',
+            'example'           =>array(
+            'attributes'        =>array(
+                'mode'          =>'preview',
+                'data'          =>[]
+
+            ),
+            )
+                ));
+
+                acf_register_block_type(array(
+                    'name'              => 'body',
+                    'title'             => __('body'),
+                    'description'       => __('A custom body block.'),
+                    'render_template'   => 'template-parts/blocks/body.php',
+                    'category'          => 'formatting',
+                    'icon'              => 'admin-comments',
+                    'keywords'          => array( 'body', 'leadspace' ),
+                    'mode'              =>'auto',
+                    'example'           =>array(
+                    'attributes'        =>array(
+                        'mode'          =>'preview',
+                        'data'          =>[]
+        
+                    ),
+                    )
+                        ));
+
+                        acf_register_block_type(array(
+                            'name'              => 'thirdSection',
+                            'title'             => __('thirdSection'),
+                            'description'       => __('A custom thirdSection block.'),
+                            'render_template'   => 'template-parts/blocks/third.php',
+                            'category'          => 'formatting',
+                            'icon'              => 'admin-comments',
+                            'keywords'          => array( 'thirdSection', 'leadspace' ),
+                            'mode'              =>'auto',
+                            'example'           =>array(
+                            'attributes'        =>array(
+                                'mode'          =>'preview',
+                                'data'          =>[]
+                
+                            ),
+                            )
+                                ));
+
+
+                                acf_register_block_type(array(
+                                    'name'              => 'fourthSection',
+                                    'title'             => __('fourthSection'),
+                                    'description'       => __('A custom fourthSection block.'),
+                                    'render_template'   => 'template-parts/blocks/fourth.php',
+                                    'category'          => 'formatting',
+                                    'icon'              => 'admin-comments',
+                                    'keywords'          => array( 'fourthSection', 'leadspace' ),
+                                    'mode'              =>'auto',
+                                    'example'           =>array(
+                                    'attributes'        =>array(
+                                        'mode'          =>'preview',
+                                        'data'          =>[]
+                        
+                                    ),
+                                    )
+                                        ));
+                                        acf_register_block_type(array(
+                                            'name'              => 'fifthSection',
+                                            'title'             => __('fifthSection'),
+                                            'description'       => __('A custom fifthSection block.'),
+                                            'render_template'   => 'template-parts/blocks/fifth.php',
+                                            'category'          => 'formatting',
+                                            'icon'              => 'admin-comments',
+                                            'keywords'          => array( 'fifthSection', 'leadspace' ),
+                                            'mode'              =>'auto',
+                                            'example'           =>array(
+                                            'attributes'        =>array(
+                                                'mode'          =>'preview',
+                                                'data'          =>[]
+                                
+                                            ),
+                                            )
+                                                ));
+                                                acf_register_block_type(array(
+                                                    'name'              => 'sixthSection',
+                                                    'title'             => __('sixthSection'),
+                                                    'description'       => __('A custom sixthSection block.'),
+                                                    'render_template'   => 'template-parts/blocks/sixth.php',
+                                                    'category'          => 'formatting',
+                                                    'icon'              => 'admin-comments',
+                                                    'keywords'          => array( 'sixthSection', 'leadspace' ),
+                                                    'mode'              =>'auto',
+                                                    'example'           =>array(
+                                                    'attributes'        =>array(
+                                                        'mode'          =>'preview',
+                                                        'data'          =>[]
+                                        
+                                                    ),
+                                                    )
+                                                        ));
+                                                        acf_register_block_type(array(
+                                                            'name'              => 'seventhSection',
+                                                            'title'             => __('seventhSection'),
+                                                            'description'       => __('A custom seventhSection block.'),
+                                                            'render_template'   => 'template-parts/blocks/seventh.php',
+                                                            'category'          => 'formatting',
+                                                            'icon'              => 'admin-comments',
+                                                            'keywords'          => array( 'seventhSection', 'leadspace' ),
+                                                            'mode'              =>'auto',
+                                                            'example'           =>array(
+                                                            'attributes'        =>array(
+                                                                'mode'          =>'preview',
+                                                                'data'          =>[]
+                                                
+                                                            ),
+                                                            )
+                                                                ));
+                                                                acf_register_block_type(array(
+                                                                    'name'              => 'eighthSection',
+                                                                    'title'             => __('eighthSection'),
+                                                                    'description'       => __('A custom eighthSection block.'),
+                                                                    'render_template'   => 'template-parts/blocks/eighth.php',
+                                                                    'category'          => 'formatting',
+                                                                    'icon'              => 'admin-comments',
+                                                                    'keywords'          => array( 'eighthSection', 'leadspace' ),
+                                                                    'mode'              =>'auto',
+                                                                    'example'           =>array(
+                                                                    'attributes'        =>array(
+                                                                        'mode'          =>'preview',
+                                                                        'data'          =>[]
+                                                        
+                                                                    ),
+                                                                    )
+                                                                        ));
+                                                                        
+    }
+
+    
+
+
+}
+
+
+
 
 
 function customTheme_pagination() {
@@ -174,5 +274,21 @@ function customTheme_pagination() {
            echo '</ul></div>';
             }
     }
+
+
+
+
+
+
+
 ?>
+
+
+
+
+
+
+
+
+
 

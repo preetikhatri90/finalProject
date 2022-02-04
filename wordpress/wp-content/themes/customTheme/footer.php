@@ -5,14 +5,22 @@
 <footer>
   <div class="container-fluid">
         <div class="row">
-            <div class="col-sm"> <img src= "<?php echo get_template_directory_uri();?>/assest/img/logo1.png"  alt="">
+            <div class="col-sm"> 
+              
+            <?php 
+         
+          
+          $footerLogo= wp_get_attachment_image_src(get_theme_mod('customTheme-footerImage-logo'))[0];
+           get_post_meta($footerLogo, '_wp_attachment_image_alt', true);
+          ?>
+          <img src="<?php echo $footerLogo;?>" alt="">
             </div>
         </div>
             <div class="row  mt-5">
                 <div class="col">
                     <ul class="list-group">
                         <h6 class="ot fw-bold">about us </h6>
-                        <a href="#"><li class=" mt-3">Lorem ipsum dolor sit amet.</li></a>
+                        <a href="<?php echo get_theme_mod('customTheme-footerLinks-AboutsusFirstLink') ?>"><li class=" mt-3">Lorem ipsum dolor sit amet.</li></a>
                         <a href="#"> <li class="   mt-2">Lorem, ipsum dolor.</li></a>
                         <a href="#"> <li class="   mt-2">Lorem, ipsum dolor.</li></a>
                       </ul>
@@ -63,7 +71,7 @@
                     </div>
                     <p class="mt-5 text-light" >
 
-                    Site content copyright © 2021 Allowded Text Terms & Privacy
+                    <?php echo get_theme_mod('intern-footer-copyright-frontline'); ?> <a href="#"><?php echo get_theme_mod('intern-footer-copyright-domain');?>
                 </p>
                     </div>
                     </div>

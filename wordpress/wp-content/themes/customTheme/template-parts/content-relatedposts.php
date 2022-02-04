@@ -8,7 +8,7 @@
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark"  > 
                               <img src="<?php the_post_thumbnail_URL(); ?>" class="img-fluid cardimage"alt="">
                               
-                <div class="text mt-3 ps-2">  <h6 class=""> <?php the_date(); ?></h6>           
+                <div class="text mt-3 ps-2">  <h6 class=""> <?php echo get_the_date() ?></h6>           
                <p class="ps-1"> <?php the_excerpt();?></a>   <br></p>
               <br> <br>
                </div>  

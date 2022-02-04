@@ -5,7 +5,7 @@
                     <div class="line position-absolute "></div>
                     <div class="text position-absolute">
                     
-                      <h2>Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.</h2>
+                      <h3><?php echo get_theme_mod('customTheme-Blog-heading'); ?></h3>
                           
                     </div>
                     <div class="infobox ">
@@ -14,8 +14,8 @@
                       the_date(); ?>
                       </div>
                       <p>
-                        Morbi pellentesque justo non magna iaculis efficitur in quis magna. Vivamus consectetur placerat iaculis. Aenean in orci et libero auctor elementum non in diam. Suspendisse vel urna luctus, tristique purus a, commodo metus. Nam commodo turpis eget magna placerat, quis molestie mauris volutpat
-                      </p>
+                      <?php echo get_theme_mod('customTheme-Blog-body'); ?>
+                       </p>
                       <button type="submit" class="btn  mt-3 text-dark"> Read More <span class="icon-arrow-right2"></span></button>  
                       
                     </div>
@@ -136,11 +136,12 @@
 </section>
 
 
-      <section class="textSection">
-        <h3 class="ms-5"> Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.</h3>
-        <p class="ms-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.</p>
-        <button type="submit" class="btn btn-outline-dark ms-5 mt-3 text-light"> Contact <span class="icon-arrow-right2"></span></button>  
-   
-       </section>
+<section class="eightSection">
+   <h3 class="ms-5"> <?php echo get_theme_mod('custom-eightSection-headline')?></h3>
+   <p class="ms-5"><?php echo get_theme_mod('custom-eightSection-subheadline')?></p>
+   <button type="submit" class="btn btn-outline-dark ms-5 mt-3 text-light"> See Our Blogs <span class="icon-arrow-right2"></span></button>  
+
+  </section>
+
 
 <?php get_footer(); ?>

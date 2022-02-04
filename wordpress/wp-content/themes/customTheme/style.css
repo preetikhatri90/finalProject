@@ -1,4 +1,14 @@
- .category .nav a{
+/*
+Theme Name: Custom theme (Preeti Khatri)
+Theme URI:
+Text Domain: custom-theme
+Description: Intern tasks
+Author: Outside
+Author URI:
+
+*/ 
+
+.category .nav a{
   text-decoration: none;
   color: black;
   margin: 30px 30px;

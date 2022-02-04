@@ -11,10 +11,10 @@ get_header();
   <img src="<?php echo get_template_directory_uri();?>/assest/img/contact/Rectangle 48.png" class="img-fluid" alt="">   
       <div class="line"></div>
         <div class="text">
-            <h1 class="">Contact us</h1>
+            <h2 class=""><?php echo get_theme_mod('customTheme-imageSection-heading')?></h2>
+
             <p>
-                Ut posuere ullamcorper euismod. Donec a justo pulvinar diam dictum lobortis vulputate non nisi. Vestibulum pellentesque eget lorem ultrices lobortis.
-            </p>
+            <?php echo get_theme_mod('customTheme-imageSection-body')?></p>
 
         </div>
 
